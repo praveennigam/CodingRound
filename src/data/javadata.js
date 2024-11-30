@@ -32,7 +32,7 @@ export const java = [
   },
   {
     "question": "Write a function to sort an array of strings by their length.",
-    "answer": "public static void sortByLength(String[] arr) { Arrays.sort(arr, Comparator.comparingInt(String::length)); }",
+    "answer": "public static void sortByLength(String[] arr) {Arrays.sort(arr, Comparator.comparingInt(String::length)); }",
     "output": "sortByLength(new String[]{\"apple\", \"banana\", \"kiwi\"}) // [kiwi, apple, banana]"
   },
   {

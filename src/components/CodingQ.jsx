@@ -36,11 +36,11 @@ const CodingQ = () => {
     }
   }, [category]);
 
-  // Automatically change question every 10 seconds
+  // Automatically change question every 40 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       nextQuestion();
-    }, 40000); // Change question every 10 seconds
+    }, 40000); // Change question every 40 seconds
 
     return () => clearInterval(timer); // Cleanup on component unmount
   }, [questions.length]);
@@ -75,8 +75,58 @@ const CodingQ = () => {
       case "mysql":
         return "sql";
       default:
-        return "jsoo"; // default to JavaScript
+        return "javascript"; // default to JavaScript
     }
+  };
+
+  // Function to generate random gradient colors for each word
+  const getRandomGradient = () => {
+    const colors = [
+      "from-pink-500 to-yellow-500",
+      "from-blue-400 to-indigo-500",
+      "from-purple-400 to-teal-400",
+      "from-green-400 to-blue-500",
+      "from-red-500 to-yellow-500",
+      "from-orange-400 to-pink-400",
+    ];
+    return colors[Math.floor(Math.random() * colors.length)];
+  };
+
+  // Function to format code: Add line breaks after '{', '}', '(', ')'
+  const formatCode = (code) => {
+    // Split the code into words and handle breaking after certain characters
+    const formattedCode = code.split(/(\s+|[{}()])/).map((word, index) => {
+      // Check for '{', '}', '(', ')' to add line breaks after them
+      if (["{"].includes(word)) {
+        return (
+          <React.Fragment key={index}>
+            <span
+              className={`text-transparent bg-clip-text bg-gradient-to-r ${getRandomGradient()}`}
+            >
+              {word}
+            </span>
+            <br /> {/* Add a line break after '{', '}', '(', ')' */}
+          </React.Fragment>
+        );
+      }
+
+      // If the word is just space, return it as is
+      if (word.trim() === "") {
+        return <span key={index}>{word}</span>;
+      }
+
+      // Otherwise, just apply the gradient to the word
+      return (
+        <span
+          key={index}
+          className={`text-transparent bg-clip-text bg-gradient-to-r ${getRandomGradient()}`}
+        >
+          {word}
+        </span>
+      );
+    });
+
+    return formattedCode;
   };
 
   return (
@@ -109,7 +159,7 @@ const CodingQ = () => {
             </button>
 
             {/* Carousel Content */}
-            <div className="overflow-hidden w-full  relative">
+            <div className="overflow-hidden w-full relative">
               {/* Slide Animation for Questions */}
               <motion.div
                 className="flex justify-center space-x-6 w-full"
@@ -120,9 +170,7 @@ const CodingQ = () => {
                 key={currentIndex} // Ensure re-mounting when index changes
               >
                 {/* Current Question */}
-                <div
-                  className="carousel-item  h-[500px] bg-gray-800 text-white p-4 rounded-lg shadow-lg w-[80vw] transform transition-all duration-1000 ease-in-out"
-                >
+                <div className="carousel-item h-[500px] bg-gray-800 text-white p-4 rounded-lg shadow-lg w-[80vw] transform transition-all duration-1000 ease-in-out">
                   <motion.h2
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -133,9 +181,10 @@ const CodingQ = () => {
                   </motion.h2>
                   <div className="overflow-auto mt-4">
                     <pre className="bg-gray-900 p-4 rounded-lg whitespace-pre-wrap w-full h-[370px]">
-                      <code className={`language-${getLanguage()}`}>
-                        {questions[currentIndex].answer}
-                      </code>
+                      {/* Div instead of <code> tag */}
+                      <div className={`language-${getLanguage()} text-base`}>
+                        {formatCode(questions[currentIndex].answer)}
+                      </div>
                     </pre>
                   </div>
                   <p className="mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
