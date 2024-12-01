@@ -5,5 +5,5 @@
 
 /* Add custom global styles */
 body {
-  @apply bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600;
+  @apply bg-gradient-to-r from-purple-700  to-blue-500;
 }

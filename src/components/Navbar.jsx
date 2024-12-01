@@ -10,75 +10,89 @@ import {
   FaFilePdf,
   FaYoutube,
   FaTelegram,
+  FaInfoCircle, // New icon for the link
 } from "react-icons/fa";
 
 const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-4 px-6 bg-gradient-to-r from-green-700 via-freen-300 to-blue-500 border-b border-neutral-700 shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-4 px-6 bg-gradient-to-r from-green-700 via-green-300 to-blue-500 border-b border-neutral-700 shadow-lg">
 
-      <div className="flex items-center gap-4 text-xl opacity-80">
+      {/* Left side - Info Icon */}
+      <div className="flex items-center gap-2 text-sm opacity-80">
+        <a
+          href="https://impraveen.onrender.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-blue-400 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-yellow-500 p-2 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"
+        >
+          <FaInfoCircle className="text-2xl sm:text-3xl" />
+        </a>
+      </div>
+
+      {/* Right side - Social Media Icons */}
+      <div className="flex items-center  text-sm opacity-80 ml-auto">
         <a
           href="https://www.linkedin.com/in/impraveen1999"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 hover:text-blue-400 transition duration-300"
+          className="text-white hover:text-blue-400 hover:bg-blue-600 transition-all duration-300 transform hover:scale-110 hover:shadow-lg p-2 rounded-full"
         >
-          <FaLinkedin />
+          <FaLinkedin className="text-xl sm:text-2xl" />
         </a>
         <a
           href="https://www.facebook.com/share/7EXCGjcN6jhvLf4g"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-700 hover:text-blue-600 transition duration-300"
+          className="text-white hover:text-blue-600 hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 hover:shadow-lg p-2 rounded-full"
         >
-          <FaFacebook />
+          <FaFacebook className="text-xl sm:text-2xl" />
         </a>
         <a
           href="https://wa.me/+919109481480"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-500 hover:text-green-400 transition duration-300"
+          className="text-white hover:text-green-400 hover:bg-green-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg p-2 rounded-full"
         >
-          <FaWhatsapp />
+          <FaWhatsapp className="text-xl sm:text-2xl" />
         </a>
         <a
           href="tel:+919109481480"
-          className="text-blue-200 hover:text-blue-100 transition duration-300"
+          className="text-white hover:text-blue-100 hover:bg-blue-200 transition-all duration-300 transform hover:scale-110 hover:shadow-lg p-2 rounded-full"
         >
-          <FaPhoneAlt />
+          <FaPhoneAlt className="text-xl sm:text-2xl" />
         </a>
         <a
           href="https://www.instagram.com/_its_praveen_"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-pink-800 hover:text-pink-600 transition duration-300"
+          className="text-white hover:text-pink-600 hover:bg-pink-700 transition-all duration-300 transform hover:scale-110 hover:shadow-lg p-2 rounded-full"
         >
-          <FaInstagram />
+          <FaInstagram className="text-xl sm:text-2xl" />
         </a>
         <a
           href="https://youtube.com/@thewebseller?si=lTc45AaTSu1hvAb3"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-red-600 hover:text-red-500 transition duration-300"
+          className="text-white hover:text-red-500 hover:bg-red-600 transition-all duration-300 transform hover:scale-110 hover:shadow-lg p-2 rounded-full"
         >
-          <FaYoutube />
+          <FaYoutube className="text-xl sm:text-2xl" />
         </a>
         <a
           href="https://t.me/techshiksha1999"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-400 hover:text-blue-300 transition duration-300"
+          className="text-white hover:text-blue-300 hover:bg-blue-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg p-2 rounded-full"
         >
-          <FaTelegram />
+          <FaTelegram className="text-xl sm:text-2xl" />
         </a>
         <button
           onClick={() => navigate("/resume")}
-          className="text-red-900 hover:text-red-700 transition duration-300"
+          className="text-white hover:text-red-700 hover:bg-red-800 transition-all duration-300 transform hover:scale-110 hover:shadow-lg p-2 rounded-full"
           aria-label="View Resume"
         >
-          <FaFilePdf />
+          <FaFilePdf className="text-xl sm:text-2xl" />
         </button>
       </div>
     </nav>

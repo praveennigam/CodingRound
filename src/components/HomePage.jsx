@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className="flex justify-center items-center flex-wrap gap-6 mt-16 pt-32"> {/* Added pt-32 for top padding */}
+    <div className="flex justify-center items-center flex-wrap gap-6 mt-16 pt-32 pb-10"> {/* Added pt-32 for top padding */}
       {/* Added the text "Prepare for interview 💌" */}
       <div className="w-full text-center mb-12">
         <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-100 to-blue-700">
