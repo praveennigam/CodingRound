@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { java, js, html, css, mysql } from "../data"; // Import data for questions
+import { java, js, html, css, mysql, JsTheory } from "../data"; // Import data for questions
 import Prism from "prismjs";
 import "prismjs/themes/prism-okaidia.css"; // VS Code-like theme for code
 
@@ -31,6 +31,10 @@ const CodingQ = () => {
       case "mysql":
         setQuestions(mysql);
         break;
+      
+        case "jstheory":
+          setQuestions(JsTheory);
+          break;  
       default:
         setQuestions([]);
     }
@@ -74,6 +78,8 @@ const CodingQ = () => {
         return "css";
       case "mysql":
         return "sql";
+        case "JsTheory":
+        return "JsTheory";
       default:
         return "javascript"; // default to JavaScript
     }

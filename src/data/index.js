@@ -4,6 +4,6 @@ import { js } from "./jsdata";     // jsdata.js
 import { html } from "./htmldata"; // htmldata.js
 import { css } from "./cssdata";   // cssdata.js
 import { mysql } from "./mysqldata"; // mysqldata.js
+import {   JsTheory} from "./jstheory";
 
-// Export them for use in other files
-export { java, js, html, css, mysql };
+export { java, js, html, css, mysql ,   JsTheory};

@@ -16,6 +16,8 @@ const HomePage = () => {
       <CategoryCard category="HTML" />
       <CategoryCard category="CSS" />
       <CategoryCard category="MySQL" />
+      <CategoryCard category="JsTheory" />
+
     </div>
   );
 };
