@@ -141,7 +141,10 @@ const CodingQ = () => {
           transition={{ duration: 1 }}
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-pink-500 mb-8 text-center"
         >
-          {category.toUpperCase()} Questions
+                  <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-red-500 to-green-400">
+          If you want to build a career in MERN, grab a pen and notebook and start taking notes! 💌
+        </h1>
+
         </motion.h1>
 
         {questions.length > 0 && (

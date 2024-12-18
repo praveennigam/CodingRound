@@ -1,4 +1,1094 @@
 export const   JsTheory= [
+  {
+    "question": "What is the MERN stack?",
+    "answer": "The MERN stack is a JavaScript-based technology stack consisting of MongoDB, Express.js, React.js, and Node.js used for building full-stack web applications."
+  },
+  {
+    "question": "What is the role of MongoDB in the MERN stack?",
+    "answer": "MongoDB is a NoSQL database used to store data in JSON-like documents. It is used as the database layer in the MERN stack."
+  },
+  {
+    "question": "What is Express.js and its purpose?",
+    "answer": "Express.js is a minimal and flexible Node.js web application framework that provides tools for building web applications and APIs."
+  },
+  {
+    "question": "What is React.js, and why is it used?",
+    "answer": "React.js is a JavaScript library for building user interfaces, primarily single-page applications. It allows developers to create reusable UI components."
+  },
+  {
+    "question": "What is Node.js, and how does it work?",
+    "answer": "Node.js is a JavaScript runtime built on Chrome's V8 engine. It allows developers to run JavaScript on the server side and handle asynchronous I/O operations."
+  },
+  {
+    "question": "What is JSX in React?",
+    "answer": "JSX is a syntax extension for JavaScript that allows you to write HTML-like code directly in JavaScript files. It makes React code easier to read and write."
+  },
+  {
+    "question": "What are React hooks?",
+    "answer": "React hooks are functions that let you use state and lifecycle features in functional components. Examples include `useState`, `useEffect`, and `useContext`."
+  },
+  {
+    "question": "What is middleware in Express.js?",
+    "answer": "Middleware in Express.js refers to functions executed during the lifecycle of a request to the server, such as logging, authentication, or parsing request bodies."
+  },
+  {
+    "question": "What is `useState` in React?",
+    "answer": "`useState` is a React hook that allows you to add state to functional components. It returns an array with the current state and a function to update it."
+  },
+  {
+    "question": "What is the difference between `GET` and `POST` requests?",
+    "answer": "`GET` is used to retrieve data from the server, while `POST` is used to send data to the server to create or update resources."
+  },
+  {
+    "question": "What is the difference between `props` and `state` in React?",
+    "answer": "`props` are used to pass data from parent to child components, while `state` is used to manage data within a component."
+  },
+  {
+    "question": "What is `async/await` in JavaScript?",
+    "answer": "`async/await` is a syntax for writing asynchronous code in a synchronous manner, making it easier to work with promises."
+  },
+  {
+    "question": "What is `mongoose` in the MERN stack?",
+    "answer": "Mongoose is an ODM (Object Data Modeling) library for MongoDB and Node.js that helps manage database schemas and interactions with MongoDB."
+  },
+  {
+    "question": "What is CORS, and why is it important in MERN applications?",
+    "answer": "CORS (Cross-Origin Resource Sharing) is a security feature that allows or restricts resources on a web server depending on the origin of the request. It is important to enable communication between the frontend (React) and backend (Express)."
+  },
+  {
+    "question": "What is the virtual DOM in React?",
+    "answer": "The virtual DOM is a lightweight JavaScript object that represents the actual DOM. React uses it to efficiently update and render UI changes."
+  },
+  {
+    "question": "What is `useEffect` in React?",
+    "answer": "`useEffect` is a React hook used to perform side effects in functional components, such as fetching data, updating the DOM, or setting up subscriptions."
+  },
+  {
+    "question": "What is the purpose of `Redux` in a MERN application?",
+    "answer": "Redux is a state management library that helps manage and centralize application state, making it easier to share state across components in React applications."
+  },
+  {
+    "question": "What is a RESTful API?",
+    "answer": "A RESTful API is an architectural style for designing networked applications. It uses HTTP methods like GET, POST, PUT, and DELETE to perform operations on resources."
+  },
+  {
+    "question": "What is JSON Web Token (JWT), and how is it used?",
+    "answer": "JWT is a compact, URL-safe token used for securely transmitting information between parties. It is commonly used for authentication in MERN applications."
+  },
+  {
+    "question": "What is the difference between `cluster` and `worker_threads` in Node.js?",
+    "answer": "`cluster` is used to spawn multiple processes to utilize multiple CPU cores, while `worker_threads` is used to create threads for parallel execution within a single process."
+  },
+  {
+    "question": "What are React portals?",
+    "answer": "React portals allow you to render children into a DOM node outside of the parent component's DOM hierarchy."
+  },
+  {
+    "question": "What is `npm`, and how is it related to Node.js?",
+    "answer": "`npm` (Node Package Manager) is a package manager for JavaScript, used to install, share, and manage dependencies in Node.js projects."
+  },
+  {
+    "question": "What are `controllers` in an Express.js application?",
+    "answer": "Controllers in Express.js are responsible for handling business logic, such as processing requests, interacting with databases, and sending responses."
+  },
+  {
+    "question": "What is the purpose of `package.json` in a Node.js project?",
+    "answer": "`package.json` is a file that contains metadata about the project, such as dependencies, scripts, and version information."
+  },
+  {
+    "question": "What is the difference between `componentDidMount` and `useEffect`?",
+    "answer": "`componentDidMount` is a lifecycle method for class components, while `useEffect` is a hook for functional components to handle side effects."
+  }
+,
+
+
+
+
+
+
+
+
+
+
+  {
+    "question": "What is the difference between `let`, `const`, and `var` in JavaScript?",
+    "answer": "`var` has function scope, while `let` and `const` have block scope. `const` is used for variables that shouldn't be reassigned."
+  },
+  {
+    "question": "What is the event loop in JavaScript?",
+    "answer": "The event loop is a mechanism that allows JavaScript to handle asynchronous operations by continuously checking the call stack and the task queue."
+  },
+  {
+    "question": "What is the purpose of `Promise.all()` in JavaScript?",
+    "answer": "`Promise.all()` runs multiple promises concurrently and resolves once all of them are resolved, or rejects if any one of them fails."
+  },
+  {
+    "question": "What is the difference between synchronous and asynchronous programming?",
+    "answer": "Synchronous programming executes code sequentially, while asynchronous programming allows certain tasks to run independently, improving efficiency."
+  },
+  {
+    "question": "What is a higher-order function in JavaScript?",
+    "answer": "A higher-order function is a function that takes another function as an argument or returns a function."
+  },
+  {
+    "question": "What is the purpose of the `useRef` hook in React?",
+    "answer": "`useRef` is used to access DOM elements directly or persist values across renders without causing re-renders."
+  },
+  {
+    "question": "What is React Context API, and when should it be used?",
+    "answer": "The Context API is used to share data (e.g., theme, authentication) across components without passing props down manually through every level."
+  },
+  {
+    "question": "What are lazy loading and code splitting in React?",
+    "answer": "Lazy loading and code splitting improve performance by loading components or modules only when they are needed, reducing initial bundle size."
+  },
+  {
+    "question": "What is React Router, and why is it used?",
+    "answer": "React Router is a library for routing in React applications, allowing developers to create single-page applications with multiple views."
+  },
+  {
+    "question": "What is server-side rendering (SSR) in React?",
+    "answer": "SSR involves rendering React components on the server and sending the fully rendered HTML to the client to improve performance and SEO."
+  },
+  {
+    "question": "What is the difference between `class` components and `functional` components in React?",
+    "answer": "Class components use lifecycle methods and state, while functional components use hooks for state and lifecycle management."
+  },
+  {
+    "question": "What is the purpose of `nodemon` in Node.js?",
+    "answer": "`nodemon` is a utility that monitors for changes in files and automatically restarts the Node.js server for faster development."
+  },
+  {
+    "question": "What is an API, and how does it relate to Express.js?",
+    "answer": "An API (Application Programming Interface) allows communication between software components. Express.js is used to build APIs by defining endpoints."
+  },
+  {
+    "question": "What is the difference between `npm` and `yarn`?",
+    "answer": "`npm` and `yarn` are package managers for JavaScript. Both manage dependencies, but `yarn` was built for faster and more reliable installations."
+  },
+  {
+    "question": "What is the purpose of middleware in Express.js?",
+    "answer": "Middleware functions execute during the request-response lifecycle and can modify requests, responses, or perform other tasks like authentication."
+  },
+  {
+    "question": "What is the difference between `PUT` and `PATCH` in RESTful APIs?",
+    "answer": "`PUT` updates an entire resource, while `PATCH` updates only specific fields of a resource."
+  },
+  {
+    "question": "What are CRUD operations in the context of MERN applications?",
+    "answer": "CRUD stands for Create, Read, Update, Delete — the four basic operations for interacting with a database in a MERN application."
+  },
+  {
+    "question": "What are MongoDB indexes, and why are they important?",
+    "answer": "Indexes improve query performance by allowing the database to find data more quickly, but they can also increase storage requirements."
+  },
+  {
+    "question": "What is the aggregation framework in MongoDB?",
+    "answer": "The aggregation framework processes data records and returns computed results, often used for data analysis and transformations."
+  },
+  {
+    "question": "What is `mongoose.Schema`, and why is it used?",
+    "answer": "`mongoose.Schema` defines the structure of documents in a MongoDB collection, including data types, validations, and default values."
+  },
+  {
+    "question": "What is `dotenv`, and why is it used?",
+    "answer": "`dotenv` is a module that loads environment variables from a `.env` file into `process.env` to manage sensitive configurations securely."
+  },
+  {
+    "question": "What is token-based authentication, and how is it implemented in MERN?",
+    "answer": "Token-based authentication uses tokens (like JWT) to verify user identity. Tokens are issued upon login and included in requests to protected routes."
+  },
+  {
+    "question": "What is the purpose of `bcrypt` in Node.js applications?",
+    "answer": "`bcrypt` is a library used to hash passwords for secure storage in the database."
+  },
+  {
+    "question": "What is the difference between `JSON` and `JSON.stringify()`?",
+    "answer": "`JSON` is a data format, while `JSON.stringify()` converts JavaScript objects into a JSON string."
+  },
+  {
+    "question": "What is the difference between `res.send()` and `res.json()` in Express.js?",
+    "answer": "`res.send()` sends a response to the client, while `res.json()` converts the response data to JSON format automatically."
+  },
+  {
+    "question": "What are React Fragments, and why are they used?",
+    "answer": "React Fragments allow you to group multiple elements without adding an extra node to the DOM."
+  },
+  {
+    "question": "What is the `useMemo` hook in React?",
+    "answer": "`useMemo` is a React hook used to memoize expensive calculations to optimize performance by recomputing only when dependencies change."
+  },
+  {
+    "question": "What are the differences between `cluster` and `worker_threads` in Node.js?",
+    "answer": "`cluster` creates child processes to utilize multiple CPU cores, while `worker_threads` creates threads for parallel execution in a single process."
+  },
+  {
+    "question": "What is the difference between a `shard` and a `replica set` in MongoDB?",
+    "answer": "A shard splits data across multiple servers to improve scalability, while a replica set duplicates data for redundancy and availability."
+  },
+  {
+    "question": "What are some ways to improve the performance of a MERN application?",
+    "answer": "Optimize queries, use indexes in MongoDB, enable lazy loading in React, compress assets, and implement server-side rendering (SSR)."
+  },
+  {
+    "question": "What is the purpose of `helmet` in Express.js?",
+    "answer": "`helmet` is a middleware used to secure Express.js applications by setting various HTTP headers."
+  },
+  {
+    "question": "What is the difference between `stateless` and `stateful` components in React?",
+    "answer": "Stateless components only render UI, while stateful components manage and respond to user interactions with state."
+  },
+  {
+    "question": "What is `useReducer`, and how is it different from `useState`?",
+    "answer": "`useReducer` is an alternative to `useState` for managing more complex state logic in React components."
+  },
+  {
+    "question": "What is the purpose of the `strict` mode in React?",
+    "answer": "React's `strict` mode helps identify potential problems in an application by providing warnings and enforcing best practices."
+  },
+  {
+    "question": "What are MongoDB transactions, and when should they be used?",
+    "answer": "MongoDB transactions allow multiple operations to be executed atomically, ensuring data consistency, and are used in scenarios requiring ACID compliance."
+  },
+  {
+    "question": "What is the purpose of the `cluster` module in Node.js?",
+    "answer": "The `cluster` module enables Node.js to fork child processes to utilize multiple CPU cores for better performance."
+  },
+  {
+    "question": "What is the purpose of `process.env` in Node.js?",
+    "answer": "`process.env` is used to access environment variables, which are often used for configuration settings like database URLs or API keys."
+  },
+  {
+    "question": "What is component lifecycle in React?",
+    "answer": "Component lifecycle refers to the stages a React component goes through: mounting, updating, and unmounting."
+  },
+  {
+    "question": "What is `sharding` in MongoDB?",
+    "answer": "`Sharding` is a database architecture that divides data across multiple servers to support scalability and high availability."
+  },
+  {
+    "question": "What is the difference between `fetch` and `axios`?",
+    "answer": "`fetch` is a native JavaScript API for making HTTP requests, while `axios` is a popular library that simplifies HTTP requests with additional features."
+  },
+  {
+    "question": "What is `rate limiting`, and why is it important in Express.js?",
+    "answer": "`Rate limiting` restricts the number of requests a client can make to prevent abuse and ensure server stability."
+  },
+  {
+    "question": "What is the difference between a `cookie` and `localStorage`?",
+    "answer": "`Cookies` are sent with every request to the server, while `localStorage` is client-side storage that doesn't interact with the server automatically."
+  },
+  {
+    "question": "What is the difference between `controlled` and `uncontrolled` components in React?",
+    "answer": "Controlled components rely on React state for form data, while uncontrolled components use the DOM directly for managing input values."
+  },
+  {
+    "question": "What is the purpose of `prop-types` in React?",
+    "answer": "`prop-types` is a library for runtime type-checking of React props to ensure components receive the correct types of data."
+  },
+  {
+    "question": "What is the purpose of `res.locals` in Express.js?",
+    "answer": "`res.locals` is used to store variables that can be passed to the next middleware or rendered views."
+  },
+  {
+    "question": "What are unit tests, and how are they used in a MERN application?",
+    "answer": "Unit tests verify the functionality of individual components or modules in isolation, ensuring that each part of the application works as intended."
+  },
+  {
+    "question": "What is the purpose of `Next.js`, and how does it differ from React?",
+    "answer": "`Next.js` is a React framework that adds features like server-side rendering (SSR), static site generation (SSG), and API routes."
+  },
+  {
+    "question": "What is a database schema in MongoDB?",
+    "answer": "A schema defines the structure of documents in a MongoDB collection, including fields, data types, and validations."
+  }
+,
+
+
+
+  {
+    "question": "What is `virtual DOM` in React, and how does it improve performance?",
+    "answer": "The virtual DOM is an in-memory representation of the real DOM. React updates the virtual DOM first, calculates the changes, and then efficiently updates the real DOM."
+  },
+  {
+    "question": "What is the difference between `state` and `props` in React?",
+    "answer": "`State` is a component's local data that can change over time, while `props` are external data passed from parent components."
+  },
+  {
+    "question": "What is `Redux`, and why is it used in React applications?",
+    "answer": "`Redux` is a state management library that provides a centralized store to manage application state predictably."
+  },
+  {
+    "question": "What are the three principles of Redux?",
+    "answer": "The three principles are: (1) Single source of truth, (2) State is read-only, (3) Changes are made with pure functions (reducers)."
+  },
+  {
+    "question": "What is `React Query`, and how does it differ from Redux?",
+    "answer": "`React Query` focuses on managing server-state and data fetching, while `Redux` is used for general state management."
+  },
+  {
+    "question": "What is the difference between `componentDidMount` and `useEffect` in React?",
+    "answer": "`componentDidMount` is a class component lifecycle method, while `useEffect` is a hook for functional components that can handle side effects."
+  },
+  {
+    "question": "What is the purpose of `JWT` in authentication?",
+    "answer": "JWT (JSON Web Token) is a compact, self-contained token used to securely transmit information between parties as JSON objects."
+  },
+  {
+    "question": "What is the `cors` middleware in Express.js?",
+    "answer": "`cors` is middleware used to enable cross-origin requests from different domains in a secure manner."
+  },
+  {
+    "question": "What is the difference between `clustered` and `non-clustered` indexes in MongoDB?",
+    "answer": "MongoDB uses only non-clustered indexes, where data is stored separately from the index, as opposed to clustered indexes which store the data with the index."
+  },
+  {
+    "question": "What is the difference between `NoSQL` and `SQL` databases?",
+    "answer": "NoSQL databases (e.g., MongoDB) are schema-less and handle unstructured data, while SQL databases use a structured schema and relational tables."
+  },
+  {
+    "question": "What is `socket.io`, and how is it used in a MERN app?",
+    "answer": "`socket.io` is a library that enables real-time, bidirectional communication between clients and servers, often used for chat apps or live updates."
+  },
+  {
+    "question": "What are some differences between `REST` and `GraphQL`?",
+    "answer": "`REST` uses predefined endpoints and HTTP methods, while `GraphQL` allows clients to query only the data they need with a flexible schema."
+  },
+  {
+    "question": "What is `SSR` (Server-Side Rendering), and how does it help SEO?",
+    "answer": "`SSR` renders components on the server, providing fully-formed HTML to search engines, improving SEO and page load time."
+  },
+  {
+    "question": "What is the purpose of `webpack` in React apps?",
+    "answer": "`webpack` is a module bundler that compiles JavaScript files and other assets into a single bundle for efficient browser delivery."
+  },
+  {
+    "question": "What is the `StrictMode` in React?",
+    "answer": "React's `StrictMode` is a development tool to identify potential issues in an application, such as deprecated methods or side-effects."
+  },
+  {
+    "question": "What is the `useCallback` hook in React?",
+    "answer": "`useCallback` is a hook that memoizes a function to prevent it from being recreated on every render, improving performance."
+  },
+  {
+    "question": "What is `Debouncing`, and how is it implemented in React?",
+    "answer": "Debouncing limits how often a function is executed in response to an event. It can be implemented using `setTimeout` in React."
+  },
+  {
+    "question": "What is the difference between `GET` and `POST` HTTP methods?",
+    "answer": "`GET` retrieves data, while `POST` is used to send data to a server to create or update a resource."
+  },
+  {
+    "question": "What are `ORMs` and give an example in Node.js?",
+    "answer": "`ORMs` (Object-Relational Mappers) simplify database interaction by mapping objects to database tables. An example is Sequelize for SQL databases."
+  },
+  {
+    "question": "What are `mongoose virtuals`, and how are they used?",
+    "answer": "`Virtuals` in Mongoose are properties that are not stored in MongoDB but derived from document fields dynamically."
+  },
+  {
+    "question": "What is the difference between `cluster` and `sharding` in MongoDB?",
+    "answer": "`Clustering` ensures high availability and load balancing, while `sharding` distributes data across multiple machines to scale horizontally."
+  },
+  {
+    "question": "What is a `proxy`, and why is it used in a MERN app?",
+    "answer": "A `proxy` forwards client requests to another server (like an API server), often used to avoid CORS issues during development."
+  },
+  {
+    "question": "What is `Middleware` in Express.js?",
+    "answer": "`Middleware` is a function that processes requests before they reach the route handler, used for tasks like authentication or logging."
+  },
+  {
+    "question": "What is the difference between `session-based` and `token-based` authentication?",
+    "answer": "`Session-based` stores user data on the server, while `token-based` uses tokens (e.g., JWT) stored on the client for authentication."
+  },
+  {
+    "question": "What is `Helmet.js`, and why is it important?",
+    "answer": "`Helmet.js` secures Express.js apps by setting various HTTP headers to protect against common vulnerabilities like XSS."
+  },
+  {
+    "question": "What is `pagination`, and how is it implemented in MongoDB?",
+    "answer": "`Pagination` splits large datasets into pages. In MongoDB, it is implemented using `skip` and `limit` queries."
+  },
+  {
+    "question": "What is `CSR` (Client-Side Rendering) in React?",
+    "answer": "`CSR` means rendering React components in the browser after the initial HTML is loaded, often used in SPAs."
+  },
+  {
+    "question": "What are React `Portals`?",
+    "answer": "React Portals allow rendering children into a DOM node outside the component's hierarchy, often used for modals or tooltips."
+  },
+  {
+    "question": "What is the difference between `useState` and `useContext`?",
+    "answer": "`useState` manages local state, while `useContext` is used to consume context values shared across components."
+  },
+  {
+    "question": "What are `Compound Components` in React?",
+    "answer": "`Compound Components` are a design pattern where components work together, sharing state implicitly, often used in libraries like `React Select`."
+  },
+  {
+    "question": "What is the difference between `fetch()` and `axios`?",
+    "answer": "`fetch()` is a built-in browser API for HTTP requests, while `axios` is a third-party library offering additional features like interceptors."
+  },
+  {
+    "question": "What are `React Suspense` and `Error Boundaries`?",
+    "answer": "`React Suspense` allows fallback UIs for asynchronous components, and `Error Boundaries` catch JavaScript errors in a component tree."
+  },
+  {
+    "question": "What is `Hydration` in React?",
+    "answer": "`Hydration` is the process of attaching event listeners to a server-rendered React app to make it interactive on the client side."
+  },
+  {
+    "question": "What is the purpose of the `package.json` file?",
+    "answer": "`package.json` is a file that contains metadata about a project, including dependencies, scripts, and project configuration."
+  },
+  {
+    "question": "What is the difference between `fs.readFile` and `fs.createReadStream` in Node.js?",
+    "answer": "`fs.readFile` reads the entire file into memory, while `fs.createReadStream` reads the file in chunks, which is better for large files."
+  },
+  {
+    "question": "What is `MongoDB Atlas`, and why is it used?",
+    "answer": "`MongoDB Atlas` is a cloud database service that simplifies hosting and managing MongoDB databases."
+  },
+  {
+    "question": "What is the difference between `path.resolve()` and `path.join()` in Node.js?",
+    "answer": "`path.resolve()` resolves a sequence of paths into an absolute path, while `path.join()` joins paths without resolving them."
+  },
+  {
+    "question": "What is `Load Balancing`, and why is it important?",
+    "answer": "`Load Balancing` distributes incoming traffic across multiple servers to ensure availability, reliability, and performance."
+  },
+  {
+    "question": "What are `indexes` in MongoDB, and when should you use them?",
+    "answer": "`Indexes` improve query performance but should be used judiciously as they increase storage and maintenance costs."
+  },
+  {
+    "question": "What is `authentication` versus `authorization`?",
+    "answer": "`Authentication` verifies a user's identity, while `authorization` determines their access rights."
+  },
+  {
+    "question": "What is the purpose of the `cluster` module in Node.js?",
+    "answer": "`Cluster` allows Node.js to create child processes that share the same server port, enabling multicore utilization."
+  },
+  {
+    "question": "What is the purpose of `ObjectId` in MongoDB?",
+    "answer": "`ObjectId` is a unique identifier for MongoDB documents, ensuring each document can be uniquely identified."
+  },
+  {
+    "question": "What is `Seeding` in databases?",
+    "answer": "`Seeding` involves populating a database with initial data for development, testing, or production."
+  },
+  {
+    "question": "What are React `keys`, and why are they important?",
+    "answer": "React `keys` help identify elements uniquely in a list to optimize rendering by efficiently tracking changes."
+  },
+  {
+    "question": "What is the purpose of `husky` in a project?",
+    "answer": "`Husky` is used to manage Git hooks, enabling tasks like running tests or linting code before commits."
+  },
+  {
+    "question": "What are `environment variables`, and how are they used in a MERN application?",
+    "answer": "`Environment variables` store sensitive data like API keys and database URLs, accessed via `process.env` in Node.js."
+  }
+ ,
+
+
+ 
+  {
+    "question": "What is the purpose of the `useReducer` hook in React?",
+    "answer": "`useReducer` is used for state management in more complex scenarios, where state transitions depend on actions."
+  },
+  {
+    "question": "What is the difference between `lazy loading` and `code splitting` in React?",
+    "answer": "`Lazy loading` loads components only when needed, while `code splitting` divides the app into smaller bundles to improve performance."
+  },
+  {
+    "question": "What is the difference between `ref` and `forwardRef` in React?",
+    "answer": "`ref` is used to directly access DOM nodes or React elements, while `forwardRef` allows passing refs to child components."
+  },
+  {
+    "question": "What are `controlled` and `uncontrolled` components in React?",
+    "answer": "`Controlled components` are managed via state, while `uncontrolled components` use the DOM for state handling."
+  },
+  {
+    "question": "What is `Prop Drilling` in React, and how can it be avoided?",
+    "answer": "`Prop Drilling` occurs when props are passed down multiple levels. It can be avoided using `Context API` or state management libraries like Redux."
+  },
+  {
+    "question": "What is the difference between `cluster` mode and `fork` mode in Node.js?",
+    "answer": "`Cluster mode` creates multiple instances of an app to utilize multiple CPU cores, while `fork` mode creates child processes for isolated tasks."
+  },
+  {
+    "question": "What is `Express Router`, and why is it used?",
+    "answer": "`Express Router` allows you to create modular, mountable route handlers to organize routes in your application."
+  },
+  {
+    "question": "What are `aggregation pipelines` in MongoDB?",
+    "answer": "`Aggregation pipelines` are a framework for data transformation and analysis, consisting of stages like `$match`, `$group`, `$sort`, and `$project`."
+  },
+  {
+    "question": "What is the `difference` between `indexOf` and `includes` in JavaScript?",
+    "answer": "`indexOf` returns the position of an element in an array, while `includes` returns a boolean indicating if an element exists."
+  },
+  {
+    "question": "What is `middleware chaining` in Express.js?",
+    "answer": "`Middleware chaining` refers to passing control from one middleware function to the next using `next()`."
+  },
+  {
+    "question": "What are the advantages of using `TypeScript` in a MERN stack project?",
+    "answer": "TypeScript adds static typing, improved editor support, and better debugging, leading to fewer runtime errors."
+  },
+  {
+    "question": "What is the difference between `Promise.all` and `Promise.allSettled`?",
+    "answer": "`Promise.all` fails if any promise rejects, while `Promise.allSettled` waits for all promises to settle, regardless of success or failure."
+  },
+  {
+    "question": "What is `Rate Limiting`, and how can it be implemented in Express.js?",
+    "answer": "`Rate Limiting` restricts the number of requests a user can make in a given time. It can be implemented using the `express-rate-limit` package."
+  },
+  {
+    "question": "What is the `difference` between `readable streams` and `writable streams` in Node.js?",
+    "answer": "`Readable streams` are used to read data from a source, while `writable streams` are used to write data to a destination."
+  },
+  {
+    "question": "What is the purpose of `dotenv` in Node.js?",
+    "answer": "`dotenv` loads environment variables from a `.env` file into `process.env` for configuration management."
+  },
+  {
+    "question": "What is `Server-Side Rendering` (SSR) with React, and how is it implemented?",
+    "answer": "`SSR` renders React components on the server, delivering HTML to the browser. It can be implemented using frameworks like Next.js."
+  },
+  {
+    "question": "What is the difference between `put()` and `patch()` HTTP methods?",
+    "answer": "`put()` replaces a resource entirely, while `patch()` updates specific fields in a resource."
+  },
+  {
+    "question": "What are `PWA` (Progressive Web Apps), and how do they relate to MERN?",
+    "answer": "`PWAs` are web apps with native-like features, often built with React for frontend, Node.js for backend, and MongoDB as a database."
+  },
+  {
+    "question": "What is the difference between `authentication` and `authorization`?",
+    "answer": "`Authentication` verifies identity, while `authorization` determines access permissions for resources."
+  },
+  {
+    "question": "What is `mongoose populate`, and why is it used?",
+    "answer": "`populate` in Mongoose is used to reference documents in other collections and fetch related data."
+  },
+  {
+    "question": "What is the difference between `npm` and `yarn`?",
+    "answer": "`npm` is the default package manager for Node.js, while `yarn` is a faster alternative with features like workspaces."
+  },
+  {
+    "question": "What is `sharding` in MongoDB?",
+    "answer": "`Sharding` is the process of distributing data across multiple servers to handle large datasets and ensure scalability."
+  },
+  {
+    "question": "What is `Memoization` in React, and when should you use it?",
+    "answer": "`Memoization` is a technique to optimize performance by caching the results of expensive calculations or component renders."
+  },
+  {
+    "question": "What is the difference between `sessionStorage` and `localStorage`?",
+    "answer": "`sessionStorage` stores data for a single session, while `localStorage` persists data even after the browser is closed."
+  },
+  {
+    "question": "What is `websockets`, and how is it used in a MERN app?",
+    "answer": "`Websockets` enable real-time communication between a client and server, often implemented with `socket.io`."
+  },
+  {
+    "question": "What is the purpose of the `useImperativeHandle` hook in React?",
+    "answer": "`useImperativeHandle` customizes the instance value exposed by `ref` to parent components."
+  },
+  {
+    "question": "What is `tree shaking` in JavaScript bundlers?",
+    "answer": "`Tree shaking` removes unused code from the final JavaScript bundle, improving performance."
+  },
+  {
+    "question": "What is the `difference` between `process.nextTick()` and `setImmediate()` in Node.js?",
+    "answer": "`process.nextTick()` executes callbacks immediately after the current operation, while `setImmediate()` executes them in the next iteration of the event loop."
+  },
+  {
+    "question": "What is `Load Testing`, and how can it be performed for a MERN app?",
+    "answer": "`Load Testing` evaluates how an app performs under heavy user traffic. Tools like Apache JMeter or Artillery can be used."
+  },
+  {
+    "question": "What are the key benefits of using `GraphQL` over `REST` APIs?",
+    "answer": "Key benefits include fetching only required data, fewer requests, and better flexibility in data querying."
+  },
+  {
+    "question": "What is the difference between `cluster` and `replica sets` in MongoDB?",
+    "answer": "`Clusters` distribute data, while `replica sets` provide redundancy and high availability by replicating data across nodes."
+  },
+  {
+    "question": "What are `webhooks`, and how can they be implemented in a MERN app?",
+    "answer": "`Webhooks` are HTTP callbacks triggered by specific events. They can be implemented in Express.js to receive event notifications."
+  },
+  {
+    "question": "What is the `difference` between `ES6 modules` and `CommonJS`?",
+    "answer": "`ES6 modules` use `import/export`, while `CommonJS` uses `require/module.exports` for module management."
+  },
+  {
+    "question": "What is the `useTransition` hook in React?",
+    "answer": "`useTransition` allows you to manage state transitions in a way that prioritizes UI updates, improving responsiveness."
+  },
+  {
+    "question": "What are `Connection Pools` in MongoDB?",
+    "answer": "`Connection Pools` manage multiple database connections to handle concurrent requests more efficiently."
+  },
+  {
+    "question": "What is `CI/CD`, and how can it benefit a MERN app?",
+    "answer": "`CI/CD` automates code integration, testing, and deployment to ensure quicker and more reliable software releases."
+  },
+  {
+    "question": "What is the purpose of `Babel` in a MERN stack project?",
+    "answer": "`Babel` is a JavaScript compiler that converts modern JavaScript code into a format compatible with older browsers."
+  },
+  {
+    "question": "What is `EJS`, and how does it differ from React?",
+    "answer": "`EJS` is a templating engine for server-side rendering, while React is a library for building user interfaces."
+  },
+  {
+    "question": "What are `middleware functions`, and how are they ordered in Express?",
+    "answer": "`Middleware functions` process requests in the order they are defined, making order critical in an Express app."
+  },
+  {
+    "question": "What is the purpose of `helmet` in Express.js?",
+    "answer": "`helmet` secures apps by setting HTTP headers to prevent common vulnerabilities like XSS or clickjacking."
+  },
+  {
+    "question": "What is the difference between `SPA` and `MPA`?",
+    "answer": "`SPA` loads a single page dynamically, while `MPA` reloads the entire page for each new view."
+  },
+  {
+    "question": "What is `Next.js`, and how does it enhance a MERN stack app?",
+    "answer": "`Next.js` is a React framework for building production-ready apps with features like SSR, static site generation, and API routes."
+  },
+  {
+    "question": "What are `JWT refresh tokens`, and why are they needed?",
+    "answer": "`JWT refresh tokens` are used to obtain new access tokens without re-authenticating, ensuring long-term access without compromising security."
+  },
+  {
+    "question": "What is the `difference` between `npm install` and `npm ci`?",
+    "answer": "`npm install` installs dependencies listed in `package.json`, while `npm ci` installs dependencies strictly based on `package-lock.json`."
+  },
+  {
+    "question": "What are `higher-order components` (HOCs) in React?",
+    "answer": "`HOCs` are functions that take a component and return a new component, often used to reuse component logic."
+  },
+  {
+    "question": "What is the `useMemo` hook in React?",
+    "answer": "`useMemo` memoizes expensive calculations, ensuring they are only recomputed when dependencies change."
+  },
+  {
+    "question": "What are `React fragments`, and why are they used?",
+    "answer": "`React fragments` allow grouping multiple elements without adding extra nodes to the DOM."
+  }
+,
+
+
+  {
+    "question": "Write a function to get the current date in 'YYYY-MM-DD' format.",
+    "answer": "function getCurrentDate() { \n  const date = new Date(); \n  return date.toISOString().split('T')[0]; \n}",
+    "output": "getCurrentDate() // '2024-11-30'"
+  },
+  {
+    "question": "Write a function to find the average of an array of numbers.",
+    "answer": "function average(arr) { \n  const sum = arr.reduce((acc, num) => acc + num, 0); \n  return sum / arr.length; \n}",
+    "output": "average([1, 2, 3, 4, 5]) // 3"
+  },
+  {
+    "question": "Write a simple React component that displays 'Hello, World!'",
+    "answer": "const HelloWorld = () => { \n  return <h1>Hello, World!</h1>; \n};",
+    "output": "<HelloWorld /> // Displays 'Hello, World!'"
+  },
+  {
+    "question": "Write a Node.js function to return the current server time.",
+    "answer": "const getServerTime = () => { \n  return new Date().toLocaleString(); \n};",
+    "output": "getServerTime() // '12/18/2024, 2:00:00 PM'"
+  },
+  {
+    "question": "Write an Express route that returns a JSON response with a message 'Success'.",
+    "answer": "app.get('/success', (req, res) => { \n  res.json({ message: 'Success' }); \n});",
+    "output": "GET /success -> { \"message\": \"Success\" }"
+  },
+  {
+    "question": "Create a form in HTML that accepts a username and password.",
+    "answer": "<form action='/submit' method='POST'> \n  <label for='username'>Username:</label> \n  <input type='text' id='username' name='username'> \n  <label for='password'>Password:</label> \n  <input type='password' id='password' name='password'> \n  <button type='submit'>Submit</button> \n</form>",
+    "output": "A form with username and password inputs."
+  },
+  {
+    "question": "Write CSS to center a div both vertically and horizontally.",
+    "answer": ".center { \n  display: flex; \n  justify-content: center; \n  align-items: center; \n  height: 100vh; \n}",
+    "output": "A div with the class 'center' will be centered on the page."
+  },
+  {
+    "question": "Write a JavaScript function to check if a string is a palindrome.",
+    "answer": "function isPalindrome(str) { \n  const cleanStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase(); \n  return cleanStr === cleanStr.split('').reverse().join(''); \n}",
+    "output": "isPalindrome('racecar') // true"
+  },
+  {
+    "question": "Create a React component that accepts a prop and displays it.",
+    "answer": "const DisplayProp = ({ message }) => { \n  return <p>{message}</p>; \n};",
+    "output": "<DisplayProp message='Hello' /> // Displays 'Hello'"
+  },
+  {
+    "question": "Write a Node.js function to calculate the factorial of a number.",
+    "answer": "function factorial(n) { \n  if (n === 0 || n === 1) return 1; \n  return n * factorial(n - 1); \n}",
+    "output": "factorial(5) // 120"
+  },
+  {
+    "question": "Write an Express route to handle user login with a POST request.",
+    "answer": "app.post('/login', (req, res) => { \n  const { username, password } = req.body; \n  if (username === 'admin' && password === 'admin') { \n    res.json({ message: 'Login Successful' }); \n  } else { \n    res.status(401).json({ message: 'Invalid credentials' }); \n  } \n});",
+    "output": "POST /login -> { \"message\": \"Login Successful\" }"
+  },
+  {
+    "question": "Write a function to filter out even numbers from an array in JavaScript.",
+    "answer": "function filterEvens(arr) { \n  return arr.filter(num => num % 2 !== 0); \n}",
+    "output": "filterEvens([1, 2, 3, 4, 5]) // [1, 3, 5]"
+  },
+  {
+    "question": "Create a React component that toggles between two states (on/off).",
+    "answer": "const ToggleButton = () => { \n  const [isOn, setIsOn] = useState(false); \n  return ( \n    <button onClick={() => setIsOn(!isOn)}>{isOn ? 'ON' : 'OFF'}</button> \n  ); \n};",
+    "output": "<ToggleButton /> // Button toggles between 'ON' and 'OFF'"
+  },
+  {
+    "question": "Write a CSS rule to make an image responsive.",
+    "answer": "img { \n  max-width: 100%; \n  height: auto; \n}",
+    "output": "An image will resize according to its container width."
+  },
+  {
+    "question": "Write a Node.js function to sum all numbers in an array.",
+    "answer": "function sumArray(arr) { \n  return arr.reduce((acc, num) => acc + num, 0); \n}",
+    "output": "sumArray([1, 2, 3, 4]) // 10"
+  },
+  {
+    "question": "Write an HTML form that accepts a user's email and displays it upon submission.",
+    "answer": "<form id='emailForm'> \n  <label for='email'>Email:</label> \n  <input type='email' id='email' name='email'> \n  <button type='submit'>Submit</button> \n</form> \n<script> \n  document.getElementById('emailForm').addEventListener('submit', (e) => { \n    e.preventDefault(); \n    alert('Email: ' + document.getElementById('email').value); \n  }); \n</script>",
+    "output": "The email will be displayed in an alert box upon submission."
+  },
+  {
+    "question": "Write a function in JavaScript to sort an array of numbers in ascending order.",
+    "answer": "function sortArray(arr) { \n  return arr.sort((a, b) => a - b); \n}",
+    "output": "sortArray([5, 3, 8, 1]) // [1, 3, 5, 8]"
+  },
+  {
+    "question": "Create an Express route that returns a list of users in JSON format.",
+    "answer": "app.get('/users', (req, res) => { \n  const users = [{ name: 'John' }, { name: 'Jane' }]; \n  res.json(users); \n});",
+    "output": "GET /users -> [{ \"name\": \"John\" }, { \"name\": \"Jane\" }]"
+  },
+  {
+    "question": "Write a React component that fetches data from an API and displays it.",
+    "answer": "const FetchData = () => { \n  const [data, setData] = useState(null); \n  useEffect(() => { \n    fetch('https://jsonplaceholder.typicode.com/posts') \n      .then(res => res.json()) \n      .then(data => setData(data)); \n  }, []); \n  return <div>{data ? JSON.stringify(data) : 'Loading...'}</div>; \n};",
+    "output": "Fetches and displays data from an API."
+  },
+  {
+    "question": "Write a Node.js function to check if a number is prime.",
+    "answer": "function isPrime(num) { \n  if (num <= 1) return false; \n  for (let i = 2; i < num; i++) { \n    if (num % i === 0) return false; \n  } \n  return true; \n}",
+    "output": "isPrime(7) // true"
+  },
+  {
+    "question": "Create an HTML button that, when clicked, displays 'Hello, World!'",
+    "answer": "<button onclick='alert(\"Hello, World!\")'>Click me</button>",
+    "output": "Clicking the button shows 'Hello, World!' in an alert."
+  },
+
+  {
+    "question": "Create a React component that adds two numbers together.",
+    "answer": "const AddNumbers = () => { \n  const [num1, setNum1] = useState(0); \n  const [num2, setNum2] = useState(0); \n  const sum = num1 + num2; \n  return ( \n    <div> \n      <input type='number' value={num1} onChange={e => setNum1(e.target.value)} /> \n      + \n      <input type='number' value={num2} onChange={e => setNum2(e.target.value)} /> \n      = {sum} \n    </div> \n  ); \n};",
+    "output": "The component will display the sum of two numbers."
+  },
+  {
+    "question": "Write an Express route to handle a GET request for '/about'.",
+    "answer": "app.get('/about', (req, res) => { \n  res.send('<h1>About Us</h1>'); \n});",
+    "output": "GET /about -> '<h1>About Us</h1>'"
+  }
+,
+
+  {
+    "question": "Write a Node.js function to connect to MongoDB using Mongoose.",
+    "answer": "const mongoose = require('mongoose'); \nconst connectDB = async () => { \n  try { \n    await mongoose.connect('mongodb://localhost:27017/mydatabase', { useNewUrlParser: true, useUnifiedTopology: true }); \n    console.log('Database connected'); \n  } catch (err) { \n    console.error(err.message); \n    process.exit(1); \n  } \n};",
+    "output": "Database will connect to MongoDB."
+  },
+  {
+    "question": "Create a React component that fetches and displays a list of users from an API.",
+    "answer": "const UsersList = () => { \n  const [users, setUsers] = useState([]); \n  useEffect(() => { \n    fetch('/api/users') \n      .then(res => res.json()) \n      .then(data => setUsers(data)); \n  }, []); \n  return ( \n    <ul> \n      {users.map(user => <li key={user.id}>{user.name}</li>)} \n    </ul> \n  ); \n};",
+    "output": "Displays a list of users fetched from the API."
+  },
+  {
+    "question": "Write an Express route to handle POST requests for creating a new user.",
+    "answer": "app.post('/api/users', (req, res) => { \n  const { name, email } = req.body; \n  const newUser = new User({ name, email }); \n  newUser.save() \n    .then(user => res.json(user)) \n    .catch(err => res.status(500).json({ message: 'Error creating user' })); \n});",
+    "output": "POST /api/users -> Creates a new user."
+  },
+  {
+    "question": "Write a React function to handle form submission.",
+    "answer": "const handleSubmit = (e) => { \n  e.preventDefault(); \n  const formData = { name, email }; \n  fetch('/api/users', { \n    method: 'POST', \n    headers: { 'Content-Type': 'application/json' }, \n    body: JSON.stringify(formData) \n  }) \n    .then(res => res.json()) \n    .then(data => console.log(data)); \n};",
+    "output": "Handles form submission and sends data to the server."
+  },
+  {
+    "question": "Create a MongoDB schema for storing user information.",
+    "answer": "const mongoose = require('mongoose'); \nconst userSchema = new mongoose.Schema({ \n  name: { type: String, required: true }, \n  email: { type: String, required: true, unique: true }, \n  password: { type: String, required: true } \n}); \nconst User = mongoose.model('User', userSchema);",
+    "output": "MongoDB schema for storing user data."
+  },
+  {
+    "question": "Write a React component that toggles visibility of a password.",
+    "answer": "const PasswordToggle = () => { \n  const [showPassword, setShowPassword] = useState(false); \n  return ( \n    <div> \n      <input type={showPassword ? 'text' : 'password'} /> \n      <button onClick={() => setShowPassword(!showPassword)}>Show/Hide</button> \n    </div> \n  ); \n};",
+    "output": "Toggles password visibility on click."
+  },
+  {
+    "question": "Write an Express route to update a user's email.",
+    "answer": "app.put('/api/users/:id', (req, res) => { \n  User.findByIdAndUpdate(req.params.id, { email: req.body.email }) \n    .then(user => res.json(user)) \n    .catch(err => res.status(500).json({ message: 'Error updating user' })); \n});",
+    "output": "PUT /api/users/:id -> Updates user's email."
+  },
+  {
+    "question": "Write a function in Node.js to hash a password before saving to MongoDB.",
+    "answer": "const bcrypt = require('bcrypt'); \nconst hashPassword = async (password) => { \n  const salt = await bcrypt.genSalt(10); \n  const hashedPassword = await bcrypt.hash(password, salt); \n  return hashedPassword; \n};",
+    "output": "Hashes the password using bcrypt."
+  },
+  {
+    "question": "Write a React component that manages a counter using state.",
+    "answer": "const Counter = () => { \n  const [count, setCount] = useState(0); \n  return ( \n    <div> \n      <p>{count}</p> \n      <button onClick={() => setCount(count + 1)}>Increment</button> \n      <button onClick={() => setCount(count - 1)}>Decrement</button> \n    </div> \n  ); \n};",
+    "output": "Displays a counter with increment and decrement buttons."
+  },
+  {
+    "question": "Write a function in JavaScript to check if a user is authenticated based on a token.",
+    "answer": "const isAuthenticated = (token) => { \n  try { \n    const decoded = jwt.verify(token, 'secret'); \n    return decoded ? true : false; \n  } catch (err) { \n    return false; \n  } \n};",
+    "output": "Checks if the token is valid."
+  },
+  {
+    "question": "Write an Express middleware to check for a valid token.",
+    "answer": "const checkAuth = (req, res, next) => { \n  const token = req.header('x-auth-token'); \n  if (!token) { \n    return res.status(401).json({ message: 'No token, authorization denied' }); \n  } \n  try { \n    const decoded = jwt.verify(token, 'secret'); \n    req.user = decoded.user; \n    next(); \n  } catch (err) { \n    res.status(401).json({ message: 'Token is not valid' }); \n  } \n};",
+    "output": "Middleware to check for valid token."
+  },
+  {
+    "question": "Write a function to delete a user from MongoDB.",
+    "answer": "app.delete('/api/users/:id', (req, res) => { \n  User.findByIdAndDelete(req.params.id) \n    .then(() => res.json({ message: 'User deleted' })) \n    .catch(err => res.status(500).json({ message: 'Error deleting user' })); \n});",
+    "output": "DELETE /api/users/:id -> Deletes a user from MongoDB."
+  },
+  {
+    "question": "Write a React component that accepts props and displays a greeting message.",
+    "answer": "const Greeting = ({ name }) => { \n  return <h1>Hello, {name}!</h1>; \n};",
+    "output": "Displays a greeting message with the name passed in as a prop."
+  },
+  {
+    "question": "Write an Express route to get a specific user by ID.",
+    "answer": "app.get('/api/users/:id', (req, res) => { \n  User.findById(req.params.id) \n    .then(user => res.json(user)) \n    .catch(err => res.status(500).json({ message: 'User not found' })); \n});",
+    "output": "GET /api/users/:id -> Returns a user by ID."
+  },
+  {
+    "question": "Write a JavaScript function to convert a string to lowercase.",
+    "answer": "function toLowerCase(str) { \n  return str.toLowerCase(); \n}",
+    "output": "toLowerCase('HELLO') // 'hello'"
+  },
+  {
+    "question": "Write an Express route to authenticate a user based on email and password.",
+    "answer": "app.post('/api/auth', (req, res) => { \n  const { email, password } = req.body; \n  User.findOne({ email }) \n    .then(user => { \n      if (!user || !bcrypt.compareSync(password, user.password)) { \n        return res.status(400).json({ message: 'Invalid credentials' }); \n      } \n      const token = jwt.sign({ userId: user._id }, 'secret'); \n      res.json({ token }); \n    }) \n    .catch(err => res.status(500).json({ message: 'Server error' })); \n});",
+    "output": "POST /api/auth -> Returns a token upon successful authentication."
+  },
+  {
+    "question": "Create a React component that handles state for a user's name and email.",
+    "answer": "const UserForm = () => { \n  const [name, setName] = useState(''); \n  const [email, setEmail] = useState(''); \n  const handleSubmit = (e) => { \n    e.preventDefault(); \n    console.log('Name:', name, 'Email:', email); \n  }; \n  return ( \n    <form onSubmit={handleSubmit}> \n      <input type='text' value={name} onChange={(e) => setName(e.target.value)} placeholder='Name' /> \n      <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' /> \n      <button type='submit'>Submit</button> \n    </form> \n  ); \n};",
+    "output": "Handles form submission for user's name and email."
+  },
+  {
+    "question": "Write a JavaScript function to find the longest string in an array.",
+    "answer": "function findLongestString(arr) { \n  return arr.reduce((longest, current) => current.length > longest.length ? current : longest, ''); \n}",
+    "output": "findLongestString(['apple', 'banana', 'strawberry']) // 'strawberry'"
+  },
+  {
+    "question": "Write a Node.js function to generate a JWT token.",
+    "answer": "const jwt = require('jsonwebtoken'); \nconst generateToken = (userId) => { \n  return jwt.sign({ userId }, 'secret', { expiresIn: '1h' }); \n};",
+    "output": "Generates a JWT token."
+  },
+  {
+    "question": "Create an Express route that returns a list of all users.",
+    "answer": "app.get('/api/users', (req, res) => { \n  User.find() \n    .then(users => res.json(users)) \n    .catch(err => res.status(500).json({ message: 'Error fetching users' })); \n});",
+    "output": "GET /api/users -> Returns a list of all users."
+  },
+ 
+    {
+      "question": "What is middleware in Express?",
+      "answer": "Middleware in Express is a function that has access to the request, response, and the next middleware function in the application’s request-response cycle.",
+      "output": "app.use((req, res, next) => { console.log('Request received'); next(); });"
+    },
+    {
+      "question": "What are React Hooks?",
+      "answer": "React Hooks are functions that allow you to use state and lifecycle features in functional components without the need for class components.",
+      "output": "const [state, setState] = useState(initialValue);"
+    },
+    {
+      "question": "How do you update the state in React?",
+      "answer": "You can update the state in React using the `setState` method in class components or the setter function from `useState` in functional components.",
+      "output": "setState(newState); // for class components, or setState(newValue); // for functional components"
+    },
+    {
+      "question": "What is `useEffect` and how does it work?",
+      "answer": "`useEffect` is a hook in React that lets you perform side effects in function components. It runs after every render by default, but you can control when it runs by passing dependencies.",
+      "output": "useEffect(() => { fetchData(); }, []);"
+    },
+    {
+      "question": "How do you create a RESTful API in Node.js using Express?",
+      "answer": "You can create a RESTful API in Node.js by defining routes for different HTTP methods (GET, POST, PUT, DELETE) using Express.",
+      "output": "app.get('/api/data', (req, res) => { res.json({ data: 'Hello World' }); });"
+    },
+    {
+      "question": "What are controlled components in React?",
+      "answer": "Controlled components are components that do not maintain their own state but instead rely on React to control their value through props and state.",
+      "output": "<input type='text' value={value} onChange={(e) => setValue(e.target.value)} />"
+    },
+    {
+      "question": "How do you handle errors in Node.js applications?",
+      "answer": "You can handle errors in Node.js by using try-catch blocks, event emitters for uncaught errors, or by using error-handling middleware in Express.",
+      "output": "app.use((err, req, res, next) => { res.status(500).send('Internal Server Error'); });"
+    },
+    {
+      "question": "How do you set up Express to serve static files?",
+      "answer": "You can serve static files in Express using the `express.static` middleware.",
+      "output": "app.use(express.static('public'));"
+    },
+    {
+      "question": "What is the difference between `findOne` and `find` in Mongoose?",
+      "answer": "`findOne` returns the first document that matches the query, while `find` returns an array of all documents that match the query.",
+      "output": "Model.findOne({ name: 'John' }) vs Model.find({ name: 'John' })"
+    },
+    {
+      "question": "What is an Express Router?",
+      "answer": "An Express Router is a mini Express application used to define routes and handle HTTP requests. It helps modularize route handling in large applications.",
+      "output": "const router = express.Router(); \nrouter.get('/', (req, res) => { res.send('Hello'); });"
+    },
+    {
+      "question": "What is the difference between `app.use()` and `app.all()` in Express?",
+      "answer": "`app.use()` is used for middleware to be applied to all routes, while `app.all()` is used to handle all HTTP methods for a specific route.",
+      "output": "app.use((req, res, next) => {...}); vs app.all('/path', (req, res) => {...});"
+    },
+    {
+      "question": "What are stateless components in React?",
+      "answer": "Stateless components are React components that do not have their own state. They only receive props and display UI accordingly.",
+      "output": "const StatelessComponent = ({ message }) => <div>{message}</div>;"
+    },
+    {
+      "question": "How do you use React context to share state globally?",
+      "answer": "You can use `React.createContext()` to create a context, and then use `Context.Provider` to pass down state and `Context.Consumer` or `useContext` to access it.",
+      "output": "const MyContext = React.createContext();"
+    },
+    {
+      "question": "How do you deploy a Node.js application to Heroku?",
+      "answer": "To deploy a Node.js app to Heroku, you need to push your code to a Heroku remote repository, set up the necessary environment variables, and run `heroku create` and `git push heroku master`.",
+      "output": "git push heroku master"
+    },
+    {
+      "question": "How do you handle session management in Express?",
+      "answer": "You can use the `express-session` middleware to handle session management in Express, which stores session data on the server.",
+      "output": "app.use(session({ secret: 'secret', resave: false, saveUninitialized: true }));"
+    },
+    {
+      "question": "What is a higher-order component (HOC) in React?",
+      "answer": "A Higher-Order Component (HOC) is a function that takes a component and returns a new component with additional functionality or behavior.",
+      "output": "const withLoader = (Component) => { return (props) => { if (props.loading) { return <Loading />; } return <Component {...props} />; }; };"
+    },
+    {
+      "question": "How do you make asynchronous API calls in React?",
+      "answer": "You can make asynchronous API calls using the `fetch` API or `axios`, and use `useEffect` to handle the data fetching when the component mounts.",
+      "output": "useEffect(() => { fetch('/api/data').then(res => res.json()).then(data => setData(data)); }, []);"
+    },
+    {
+      "question": "What is the purpose of the `map()` function in JavaScript?",
+      "answer": "The `map()` function in JavaScript creates a new array by applying a function to each element in the original array.",
+      "output": "const doubled = arr.map(num => num * 2);"
+    },
+    {
+      "question": "What is an example of a MongoDB aggregation pipeline?",
+      "answer": "An aggregation pipeline in MongoDB allows you to process data in stages. For example, you can use `$match`, `$group`, and `$sort` stages to filter, group, and sort data.",
+      "output": "db.collection.aggregate([{ $match: { status: 'active' } }, { $group: { _id: '$category', count: { $sum: 1 } } }]);"
+    },
+    {
+      "question": "How do you manage global state in React?",
+      "answer": "You can manage global state in React using Context API or third-party state management libraries like Redux or MobX.",
+      "output": "const Context = React.createContext();"
+    },
+    {
+      "question": "What is the purpose of `useMemo` in React?",
+      "answer": "`useMemo` is a hook in React that memoizes the result of a computation, ensuring that the computation is only recalculated when the dependencies change.",
+      "output": "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);"
+    },
+    {
+      "question": "How do you integrate MongoDB with Node.js?",
+      "answer": "You can integrate MongoDB with Node.js using the `mongoose` library, which provides a simple schema-based solution for modeling data.",
+      "output": "const mongoose = require('mongoose'); mongoose.connect('mongodb://localhost/mydatabase');"
+    },
+    {
+      "question": "What is `useReducer` in React?",
+      "answer": "`useReducer` is a hook in React used to manage complex state logic, similar to `useState`, but with more control over state transitions.",
+      "output": "const [state, dispatch] = useReducer(reducer, initialState);"
+    },
+    {
+      "question": "How do you handle form submissions in React?",
+      "answer": "You can handle form submissions in React by managing form state using `useState`, and handling the `onSubmit` event.",
+      "output": "const handleSubmit = (e) => { e.preventDefault(); console.log('Form submitted'); };"
+    },
+    {
+      "question": "How do you handle authentication in a MERN application?",
+      "answer": "Authentication in MERN is typically done using JWT (JSON Web Token). The backend (Node/Express) generates a token after successful login, and the frontend (React) stores the token in local storage or cookies.",
+      "output": "const token = jwt.sign({ userId: user._id }, 'secret');"
+    },
+    {
+      "question": "What is the difference between `localStorage` and `sessionStorage`?",
+      "answer": "Both `localStorage` and `sessionStorage` are used to store data in the browser. `localStorage` persists even after the browser is closed, while `sessionStorage` is cleared when the session ends (browser/tab is closed).",
+      "output": "localStorage.setItem('key', 'value'); sessionStorage.setItem('key', 'value');"
+    },
+    {
+      "question": "What is the `useCallback` hook in React?",
+      "answer": "`useCallback` is a hook in React that returns a memoized version of a callback function, which is only recreated when the dependencies change.",
+      "output": "const memoizedCallback = useCallback(() => { doSomething(); }, [dependency]);"
+    },
+    {
+      "question": "How do you handle multiple routes in Express?",
+      "answer": "You can define multiple routes in Express using the `app.get()`, `app.post()`, `app.put()`, and `app.delete()` methods for different HTTP methods.",
+      "output": "app.get('/route1', handler1); app.post('/route2', handler2);"
+    },
+    {
+      "question": "How do you manage component lifecycle in React?",
+      "answer": "In React, you can manage component lifecycle using class component methods (`componentDidMount`, `componentWillUnmount`) or the `useEffect` hook in functional components.",
+      "output": "useEffect(() => { return () => { cleanUp(); }; }, []);"
+    },
+    {
+      "question": "How do you protect routes in React using React Router?",
+      "answer": "You can protect routes in React by using a conditional check, like a private route component that checks if the user is authenticated before rendering the route.",
+      "output": "const PrivateRoute = ({ component: Component, ...rest }) => { return isAuthenticated ? <Component {...rest} /> : <Redirect to='/login' />; };"
+    }
+,
+ 
+ 
+ 
+  {
+    "question": "Write a Node.js function to get the current date and time.",
+    "answer": "const getCurrentDateTime = () => { \n  return new Date().toISOString(); \n};",
+    "output": "Returns the current date and time in ISO format."
+  },
+  {
+    "question": "Write a React component that displays a list of items fetched from an API.",
+    "answer": "const ItemList = () => { \n  const [items, setItems] = useState([]); \n  useEffect(() => { \n    fetch('/api/items') \n      .then(res => res.json()) \n      .then(data => setItems(data)); \n  }, []); \n  return ( \n    <ul> \n      {items.map(item => <li key={item.id}>{item.name}</li>)} \n    </ul> \n  ); \n};",
+    "output": "Displays a list of items fetched from the API."
+  },
+  {
+    "question": "Write a Node.js function to send an email using nodemailer.",
+    "answer": "const nodemailer = require('nodemailer'); \nconst sendEmail = async (to, subject, text) => { \n  let transporter = nodemailer.createTransport({ \n    service: 'gmail', \n    auth: { \n      user: 'your-email@gmail.com', \n      pass: 'your-email-password' \n    } \n  }); \n  const info = await transporter.sendMail({ \n    from: 'your-email@gmail.com', \n    to, \n    subject, \n    text \n  }); \n  console.log('Message sent: %s', info.messageId); \n};",
+    "output": "Sends an email using nodemailer."
+  },
+  {
+    "question": "Write an Express route to handle user login.",
+    "answer": "app.post('/api/login', (req, res) => { \n  const { email, password } = req.body; \n  User.findOne({ email }) \n    .then(user => { \n      if (!user || !bcrypt.compareSync(password, user.password)) { \n        return res.status(400).json({ message: 'Invalid credentials' }); \n      } \n      const token = jwt.sign({ userId: user._id }, 'secret'); \n      res.json({ token }); \n    }) \n    .catch(err => res.status(500).json({ message: 'Server error' })); \n});",
+    "output": "POST /api/login -> Returns a JWT token after successful login."
+  },
+  {
+    "question": "Write a JavaScript function to reverse a string.",
+    "answer": "function reverseString(str) { \n  return str.split('').reverse().join(''); \n}",
+    "output": "reverseString('hello') // 'olleh'"
+  },
+  {
+    "question": "Create an Express route to get a list of all items.",
+    "answer": "app.get('/api/items', (req, res) => { \n  Item.find() \n    .then(items => res.json(items)) \n    .catch(err => res.status(500).json({ message: 'Error fetching items' })); \n});",
+    "output": "GET /api/items -> Returns a list of items."
+  }
+,
     {
       "question": "What is the `this` keyword in JavaScript?",
       "answer": "`this` refers to the context in which a function is called. Its value depends on how the function is invoked."
