@@ -17,7 +17,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-4 px-6 bg-gradient-to-r from-green-300 via-blue-900 to-blue-500 border-b border-neutral-700 shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-4 px-6 bg-gradient-to-r from-red-400 via-blue-900 to-blue-500 border-b border-neutral-700 shadow-lg">
 
       {/* Left side - Info Icon */}
       <div className="flex items-center gap-2 text-sm opacity-80">
@@ -100,3 +100,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
