@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const CategoryCard = ({ name, link }) => {
   return (
     <div
-      className="relative pt-32 w-64 h-80 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 rounded-lg p-5 shadow-lg hover:scale-105 transition-all duration-300"
+      className="relative pt-32 w-64 h-80 rounded-lg p-5 shadow-lg hover:scale-105 transition-all duration-300"
       style={{ paddingTop: "150px" }} // Only keep inline style for exact 150px padding
     >
       <Link
