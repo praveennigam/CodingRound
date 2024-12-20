@@ -31,10 +31,9 @@ const CodingQ = () => {
       case "mysql":
         setQuestions(mysql);
         break;
-      
-        case "jstheory":
-          setQuestions(JsTheory);
-          break;  
+      case "jstheory":
+        setQuestions(JsTheory);
+        break;
       default:
         setQuestions([]);
     }
@@ -78,7 +77,7 @@ const CodingQ = () => {
         return "css";
       case "mysql":
         return "sql";
-        case "JsTheory":
+      case "JsTheory":
         return "JsTheory";
       default:
         return "javascript"; // default to JavaScript
@@ -132,7 +131,7 @@ const CodingQ = () => {
   };
 
   return (
-    <div className="container mx-auto mt-4 bg-gradient-to-r from-purple-700 to-blue-500 min-h-screen pt-22 flex justify-center items-center">
+    <div className="container mx-auto mt-4 bg-gradient-to-r from-purple-700 to-blue-600 min-h-screen pt-22 flex justify-center items-center">
       <div className="relative w-full max-w-7xl px-4 sm:px-8">
         {/* Title with gradient text */}
         <motion.h1
@@ -141,10 +140,7 @@ const CodingQ = () => {
           transition={{ duration: 1 }}
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-pink-500 mb-8 text-center"
         >
-                  <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-red-500 to-green-400">
-          If you want to build a career in MERN, grab a pen and notebook and start taking notes! 💌
-        </h1>
-
+          Take a Pen and Copy & Note Down
         </motion.h1>
 
         {questions.length > 0 && (
@@ -181,18 +177,17 @@ const CodingQ = () => {
                     transition={{ duration: 0.5 }}
                     className="text-lg sm:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-blue-600"
                   >
-                    {questions[currentIndex].question}
+                    Take a Pen and Copy and Note Down
                   </motion.h2>
                   <div className="overflow-auto mt-4">
                     <pre className="bg-gray-900 p-4 rounded-lg whitespace-pre-wrap w-full h-[auto]">
                       <div className={`language-${getLanguage()} text-base sm:text-lg overflow-auto max-h-[400px] px-2`}>
                         {formatCode(questions[currentIndex].answer)}
                       </div>
-
                     </pre>
                   </div>
                   <p className="mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 text-sm sm:text-base">
-                    Output: {questions[currentIndex].output}
+                    Output: Take a Pen and Copy & Note Down
                   </p>
                 </div>
               </motion.div>
