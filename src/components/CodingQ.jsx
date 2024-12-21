@@ -39,11 +39,11 @@ const CodingQ = () => {
     }
   }, [category]);
 
-  // Automatically change question every 40 seconds
+  // Automatically change question every 35 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       nextQuestion();
-    }, 35000); // Change question every 40 seconds
+    }, 35000); // Change question every 35 seconds
 
     return () => clearInterval(timer); // Cleanup on component unmount
   }, [questions.length]);
@@ -61,8 +61,8 @@ const CodingQ = () => {
 
   // Highlight the code after questions have been set
   useEffect(() => {
-    Prism.highlightAll(); // Apply syntax highlighting
-  }, [questions]);
+    Prism.highlightAll(); // Apply syntax highlighting after the content is updated
+  }, [questions, currentIndex]);
 
   // Dynamically determine language for code blocks
   const getLanguage = () => {
@@ -77,8 +77,8 @@ const CodingQ = () => {
         return "css";
       case "mysql":
         return "sql";
-      case "JsTheory":
-        return "JsTheory";
+      case "jstheory":
+        return "js"; // Assuming JavaScript theory for code-related questions
       default:
         return "javascript"; // default to JavaScript
     }
@@ -177,7 +177,7 @@ const CodingQ = () => {
                     transition={{ duration: 0.5 }}
                     className="text-lg sm:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-blue-600"
                   >
-                    Take a Pen and Copy and Note Down
+                    Q. {questions[currentIndex].question}
                   </motion.h2>
                   <div className="overflow-auto mt-4">
                     <pre className="bg-gray-900 p-4 rounded-lg whitespace-pre-wrap w-full h-[auto]">
@@ -187,7 +187,7 @@ const CodingQ = () => {
                     </pre>
                   </div>
                   <p className="mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 text-sm sm:text-base">
-                    Output: Take a Pen and Copy & Note Down
+                    Output: {questions[currentIndex].output}
                   </p>
                 </div>
               </motion.div>
